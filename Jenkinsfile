@@ -11,7 +11,7 @@ pipeline{
                         string(credentialsId: 'AZ_TENANT', variable: 'aztenant'),         
                             ]) {
                             sh 'az login --service-principal --username $azuser --password $azpass --tenant $aztenant'
-                            sh 'az account subscription list'
+                            sh 'az account show'
                             }
                             }
                 
