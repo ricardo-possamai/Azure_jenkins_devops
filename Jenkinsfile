@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	
-	stages('login Azure) {
+	stages('login Azure') {
 	steps{
 	 script{
             withCredentials([
